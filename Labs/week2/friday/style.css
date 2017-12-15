@@ -1,0 +1,13 @@
+body {
+  background-image: url("notepad.jpg");
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  color: white;
+}

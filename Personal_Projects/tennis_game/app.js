@@ -6,7 +6,10 @@ let ballSpeedX = 10;
 let ballSpeedY = 5;
 
 let paddle1Y = 250;
+let paddle2Y = 250;
+let paddleThickness = 10;
 let paddleHeight = 100;
+
 
 function calculateMousePos(evt) {
   let rect = canvas.getBoundingClientRect();
@@ -46,6 +49,7 @@ window.onload = function () {
 function moveEverything() {
   ballX = ballX + ballSpeedX;
   ballY = ballY + ballSpeedY;
+
   if(ballX < 0) {
     if(ballY > paddle1Y &&
       ballY < paddle1Y+paddleHeight) {
@@ -55,7 +59,12 @@ function moveEverything() {
     }
   }
   if(ballX > canvas.width) {
-    ballSpeedX = -ballSpeedX;
+    if(ballY > paddle2Y &&
+      ballY < paddle2Y + paddleHeight) {
+      ballSpeedX = -ballSpeedX;
+    } else {
+          ballReset();
+    }
   }
   if(ballY < 0) {
     ballSpeedY = -ballSpeedY;
@@ -69,7 +78,9 @@ function drawEverything() {
   //next line blanks out the screen with black
   colorRect(0, 0, canvas.width, canvas.height, 'black');
   //this is left player paddle
-  colorRect(5, paddle1Y, 10, paddleHeight, 'white');
+  colorRect(0, paddle1Y, paddleThickness, paddleHeight, 'red');
+  //this is right player paddle
+  colorRect(canvas.width-10, paddle2Y, paddleThickness, paddleHeight, 'red');
   //this draws the ball
   colorCircle(ballX, ballY, 10, 'red');
 };

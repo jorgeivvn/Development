@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Sneakers
+      </a>
+    </nav>
+
+    <br>
+
+    <div class="container">
+
+    	<ul class="list-group">
+  	  	<% sneakersArray.forEach( (lesson) => { %>
+  			<a href="/sneakers/<%= lesson.id %>"><li class="list-group-item"> <%= lesson.title %> | <a href="<%= lesson.stockxUrl %>"> StockX </a> </li></a>
+  		  <% }) %>
+
+  	  </ul>
+  </div>
+
+  <!-- <br>
+  <div class="container">
+    <form method='POST' action='/lessons'>
+      <label>Title</label>
+      <input name='title' type='text' />
+      <label>Github Url</label>
+      <input name='githubUrl' type='text' />
+      <input type='submit' value='Submit!' />
+    </form>
+  </div> -->
+  </body>
+</html>

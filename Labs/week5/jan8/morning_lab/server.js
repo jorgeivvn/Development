@@ -4,6 +4,7 @@ const morgan     = require('morgan');
 const path       = require('path');
 const app        = express();
 const lessons    = require('./routes/lessons');
+const sneakers   = require('./routes/lessons');
 
 app.use(bodyParser.json());
 app.use(morgan('tiny'));

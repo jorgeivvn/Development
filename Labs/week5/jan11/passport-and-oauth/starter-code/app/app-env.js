@@ -1,0 +1,2 @@
+module.exports.GOOGLE_CLIENT_ID="378044393213-v044igeiha7lu1tk77cm84j8dg6nknil.apps.googleusercontent.com";
+module.exports.GOOGLE_CLIENT_SECRET="koX5lUAslYwn_iCJ4nrCOg2M"

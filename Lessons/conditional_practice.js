@@ -18,3 +18,6 @@
 
 Boolean(false);
 console.log(false);
+
+Boolean(null);
+console.log(null);

@@ -24,6 +24,14 @@ app.get('/save', function(req, res){
   });
 });
 
+app.get('/api/todos', function todosIndex(req, res){
+  todo.find(function handleDBTodosListed(err, allTodos) {
+    res.json({ todos: allTodos });
+  });
+});
+
+// app.get()
+
 app.get('*', function(req, res) {
   res.send('On the home page!')
 });

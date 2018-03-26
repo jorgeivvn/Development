@@ -5,3 +5,36 @@ var drawCats = function (howManyCats) {
 };
 
 drawCats(15);
+
+
+var addition = 123455 + 303030;
+
+console.log(addition);
+
+
+var numberOfCandies = 8;
+var numberOfSiblings = 4;
+
+var sharedCandies = numberOfCandies / numberOfSiblings;
+
+console.log(sharedCandies);
+
+var secondsInAMinute = 60;
+var minutesInAnHour = 60;
+
+var secondsInAnHour = secondsInAMinute * minutesInAnHour;
+
+var secondsInADay = secondsInAnHour * 24;
+
+var secondsInAYear = secondsInADay * 365;
+
+console.log(secondsInAYear);
+
+
+var balloons = 100;
+balloons *= 2;
+
+console.log("Balloons = " + balloons);
+
+var myName = "Jorge";
+console.log(myName.length);

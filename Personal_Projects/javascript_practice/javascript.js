@@ -38,3 +38,11 @@ console.log("Balloons = " + balloons);
 
 var myName = "Jorge";
 console.log(myName.length);
+
+console.log("jorgeivvn".length);
+
+console.log(myName[0]);
+console.log(myName[1]);
+console.log(myName[2]);
+console.log(myName[3]);
+console.log(myName[4]);

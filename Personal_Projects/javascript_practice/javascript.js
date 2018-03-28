@@ -134,4 +134,19 @@ console.log(dinosaursAndNumbers[2]); //gives back the whole array within the arr
 
 console.log(dinosaursAndNumbers[2][1]); //"stegosaurus"
 
-console.log(groceryList.length);
+console.log(groceryList.length); // 8 because dont forget i added cereal to array
+
+console.log(groceryList[groceryList.length - 1]); //cereal
+
+var animals = [];
+
+animals.push("dogs"); //push adds to end of array
+console.log(animals);
+animals.push("cats");
+console.log(animals);
+
+animals.unshift("bear"); //adds to beginning of array
+console.log(animals);
+
+animals.pop(); //removes cats at end of array
+console.log(animals);

@@ -94,9 +94,44 @@ var height = 58;
 console.log(height > heightRestriction);
 
 
-//"===" checks if number 5 is equal to number 5 which it isn't because mySecondNumber is a string. "==" checks if they're equal even if one is a string, which is true. 
+//"===" checks if number 5 is equal to number 5 which it isn't because mySecondNumber is a string. "==" checks if they're equal even if one is a string, which is true.
 var myNumber = 5;
 var mySecondNumber = "5";
 
 console.log(myNumber === mySecondNumber);
 console.log(myNumber == mySecondNumber);
+
+// The rules are, if someone is 13 or over, they’re allowed
+// in. If they’re not over 13, but they are accompanied by an
+// adult, they’re also allowed in. Otherwise, they can’t see the
+// movie.
+var age = 10;
+var accompaniedByAdult = false;
+var allowedAge = 13;
+console.log("Should we let him in?");
+console.log(age >= allowedAge || accompaniedByAdult);
+
+//ABOVE THIS IS BASIC DATA TYPES NUMBERS, BOOLEANS, STRINGS
+
+//BELOW THIS ARE ARRAYS
+var groceryList = [
+  "bananas",
+  "oranges",
+  "tuna",
+  "avocados",
+  "eggs",
+  "almond milk",
+  "turkey"
+];
+
+groceryList[7] = "cereal" //adds it to array
+
+console.log(groceryList);
+
+var dinosaursAndNumbers =  [3, "dinosaurs", ["triceratops", "stegosaurus", 3627.5], 10];
+
+console.log(dinosaursAndNumbers[2]); //gives back the whole array within the array because that is in index 2
+
+console.log(dinosaursAndNumbers[2][1]); //"stegosaurus"
+
+console.log(groceryList.length);

@@ -79,3 +79,24 @@ console.log(capitalH + restOfWord);
 
 //Another way to convert 'greeting' to Hello there, how are you doing?
 console.log(greeting[0].toUpperCase() + greeting.slice(1).toLowerCase());
+
+//In this case, it’s not the weekend, you have showered, and you don’t have an apple but you do have an orange—so you should go to school.
+var isWeekend = false;
+var hadShower = true;
+var hasApple = false;
+var hasOrange = true;
+var shouldGoToSchool = !isWeekend && hadShower && (hasApple || hasOrange);
+shouldGoToSchool;
+console.log(shouldGoToSchool);
+
+var heightRestriction = 60;
+var height = 58;
+console.log(height > heightRestriction);
+
+
+//"===" checks if number 5 is equal to number 5 which it isn't because mySecondNumber is a string. "==" checks if they're equal even if one is a string, which is true. 
+var myNumber = 5;
+var mySecondNumber = "5";
+
+console.log(myNumber === mySecondNumber);
+console.log(myNumber == mySecondNumber);

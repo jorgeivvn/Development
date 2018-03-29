@@ -218,3 +218,18 @@ console.log(randomBasketballPlayer); // one way to get a random player from arra
 
 var otherRandomBaller = basketballPlayers[Math.floor(Math.random()*8)];
 console.log("Other random player: " + otherRandomBaller); //other way to get random player from array
+
+var magicEightBall = [
+  "It is certain!",
+  "Yes, definitely!",
+  "Without a doubt!",
+  "You may rely on it"
+  "Ask again later!",
+  "Better not tell you now!",
+  "Cannot predict now!",
+  "Concentrate and ask again!",
+  "Don't count on it!",
+  "My sources say no!",
+  "Very doubtful!",
+  "Hell no!"
+]

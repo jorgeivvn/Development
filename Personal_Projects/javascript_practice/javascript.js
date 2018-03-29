@@ -223,7 +223,7 @@ var magicEightBall = [
   "It is certain!",
   "Yes, definitely!",
   "Without a doubt!",
-  "You may rely on it"
+  "You may rely on it",
   "Ask again later!",
   "Better not tell you now!",
   "Cannot predict now!",
@@ -232,4 +232,31 @@ var magicEightBall = [
   "My sources say no!",
   "Very doubtful!",
   "Hell no!"
-]
+];
+
+var eightBallReply = magicEightBall[Math.floor(Math.random() * magicEightBall.length)];
+console.log("Q: Am I going to land a job soon? " + "A: " + eightBallReply);
+
+var bodyParts = ["Nose", "Chin", "Ears", "Eyes"];
+var adjectives = ["Smelly", "Boring", "Stupid", "Huge", "Ugly", "Disgusting"];
+var animal = ["Monkey", "Tiger", "Lion", "Gorilla", "Chimpanzee"];
+var animalBodyPart = ["Nose", "Butt", "Stinky Mouth"];
+
+var randomBodyPart = bodyParts[Math.floor(Math.random() * bodyParts.length)];
+var randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+var randomAnimal = animal[Math.floor(Math.random() * animalBodyPart.length)];
+var randomAnimalBodyPart = animalBodyPart[Math.floor(Math.random() * animalBodyPart.length)];
+
+console.log("Your " + randomBodyPart + " is more " + randomAdjective + " than a " + randomAnimal + "'s " + randomAnimalBodyPart);
+
+var randomInsult = ["Your", randomBodyPart, "is more", randomAdjective, "than a", randomAnimal, randomAnimalBodyPart];
+
+console.log(randomInsult.join(" "));
+
+var numberArray = [3, 2, 1];
+var stringStatement = numberArray[0] + " is bigger than " + numberArray[1] + " is bigger than " + numberArray[2];
+console.log(stringStatement);
+
+var stringStatementJoinMethod = [numberArray[0], "is bigger than", numberArray[1], "is bigger than", numberArray[2]];
+
+console.log(stringStatementJoinMethod.join(" ")); //same as above but this puts everything into another array then uses the join method to create the string statement

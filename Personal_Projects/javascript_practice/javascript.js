@@ -52,16 +52,16 @@ var codeWord2 = "tubas";
 var codeWord3 = "unsafe";
 var codeWord4 = "?!";
 
-console.log(codeWord1[1] + codeWord2[1] + codeWord3[1] + codeWord4[1]);
+console.log(codeWord1[1] + codeWord2[1] + codeWord3[1] + codeWord4[1]); //run!
 
 //When slicing, the first number in the parantheses is the number of the character that begins the slice, and the second number in the parantheses is the number of the character AFTER the last character in the slice.
-console.log(myName.slice(1,4));
+console.log(myName.slice(1,4)); //Returns "org"
 
 var longString = "My long string is long";
 
-console.log(longString.slice(2, 17));
+console.log(longString.slice(2, 17)); //long string is
 
-console.log(longString.slice(7));
+console.log(longString.slice(7)); // Slices anything after index 7, so "string is long"
 
 var myHometown = "Rio Rico, AZ";
 
@@ -75,7 +75,7 @@ var lowerCase = greeting.toLowerCase();
 var capitalH = lowerCase[0].toUpperCase();
 var restOfWord = lowerCase.slice(1);
 
-console.log(capitalH + restOfWord);
+console.log(capitalH + restOfWord); //Hello there, how are you doing?
 
 //Another way to convert 'greeting' to Hello there, how are you doing?
 console.log(greeting[0].toUpperCase() + greeting.slice(1).toLowerCase());
@@ -87,19 +87,19 @@ var hasApple = false;
 var hasOrange = true;
 var shouldGoToSchool = !isWeekend && hadShower && (hasApple || hasOrange);
 shouldGoToSchool;
-console.log(shouldGoToSchool);
+console.log(shouldGoToSchool); //true
 
 var heightRestriction = 60;
 var height = 58;
-console.log(height > heightRestriction);
+console.log(height > heightRestriction); // False
 
 
 //"===" checks if number 5 is equal to number 5 which it isn't because mySecondNumber is a string. "==" checks if they're equal even if one is a string, which is true.
 var myNumber = 5;
 var mySecondNumber = "5";
 
-console.log(myNumber === mySecondNumber);
-console.log(myNumber == mySecondNumber);
+console.log(myNumber === mySecondNumber); // false
+console.log(myNumber == mySecondNumber); // true
 
 // The rules are, if someone is 13 or over, they’re allowed
 // in. If they’re not over 13, but they are accompanied by an
@@ -109,7 +109,7 @@ var age = 10;
 var accompaniedByAdult = false;
 var allowedAge = 13;
 console.log("Should we let him in?");
-console.log(age >= allowedAge || accompaniedByAdult);
+console.log(age >= allowedAge || accompaniedByAdult); // False
 
 //ABOVE THIS IS BASIC DATA TYPES NUMBERS, BOOLEANS, STRINGS
 
@@ -124,7 +124,7 @@ var groceryList = [
   "turkey"
 ];
 
-groceryList[7] = "cereal" //adds it to array
+groceryList[7] = "cereal" //adds it to array in index 7, so after Turkey
 
 console.log(groceryList);
 
@@ -145,13 +145,13 @@ console.log(animals);
 animals.push("cats");
 console.log(animals);
 
-animals.unshift("bear"); //adds to beginning of array
+animals.unshift("bear"); //unshift adds to beginning of array
 console.log(animals);
 
-animals.pop(); //removes cats at end of array
+animals.pop(); // pop removes cats at end of array
 console.log(animals);
 
-animals.shift(); //removes bear at beginning of array
+animals.shift(); // shift removes bear at beginning of array
 console.log(animals);
 
 animals.unshift("panther");
@@ -168,3 +168,24 @@ var featheredAnimals = ["Macaw", "Dodo"];
 var allAnimals = furryAnimals.concat(scalyAnimals, featheredAnimals); //Adds multiple arrays together
 
 console.log("All animals: " + allAnimals);
+
+var favoriteColors = [
+  "Red",
+  "Blue",
+  "Orange",
+  "Yellow",
+  "Sapphire"
+];
+
+console.log(favoriteColors);
+
+console.log(favoriteColors.indexOf("Sapphire")); // 4 
+
+var favoriteColorsString = favoriteColors.join();
+console.log(favoriteColorsString);
+
+var favoriteColorsStringHyphens = favoriteColors.join(" - ");
+console.log(favoriteColorsStringHyphens);
+
+var myNames = ["Jorge", "Ivan", "Rodriguez", "Armenta"];
+console.log(myNames.join(" "));

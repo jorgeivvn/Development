@@ -179,13 +179,42 @@ var favoriteColors = [
 
 console.log(favoriteColors);
 
-console.log(favoriteColors.indexOf("Sapphire")); // 4 
+console.log(favoriteColors.indexOf("Sapphire")); // 4
 
 var favoriteColorsString = favoriteColors.join();
-console.log(favoriteColorsString);
+console.log(favoriteColorsString); // gives me the array in string
 
 var favoriteColorsStringHyphens = favoriteColors.join(" - ");
-console.log(favoriteColorsStringHyphens);
+console.log(favoriteColorsStringHyphens); // gives me array in string with hyphens between words
 
 var myNames = ["Jorge", "Ivan", "Rodriguez", "Armenta"];
-console.log(myNames.join(" "));
+console.log(myNames.join(" ")); // Jorge Ivan Rodriguez Armenta
+
+var randomNumber = Math.random();
+console.log(randomNumber); // gives me a random number between 0 and 1
+
+var randomNumberTimesTen = randomNumber*10;
+console.log(randomNumberTimesTen);
+
+var roundedNumber = Math.floor(randomNumberTimesTen);
+console.log(roundedNumber); //gives me the random number rounded down to whole number below (ex: 9.99999999 becomes 9);
+
+var basketballPlayers = [
+  "Jordan",
+  "Lebron",
+  "Pippen",
+  "Malone",
+  "Webber",
+  "Carter",
+  "Williams",
+  "Curry"
+];
+
+var randomIndex = Math.floor(Math.random()*8);
+console.log("Random Index: " + randomIndex);
+
+var randomBasketballPlayer = basketballPlayers[randomIndex];
+console.log(randomBasketballPlayer); // one way to get a random player from array
+
+var otherRandomBaller = basketballPlayers[Math.floor(Math.random()*8)];
+console.log("Other random player: " + otherRandomBaller); //other way to get random player from array

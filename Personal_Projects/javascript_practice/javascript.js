@@ -150,3 +150,21 @@ console.log(animals);
 
 animals.pop(); //removes cats at end of array
 console.log(animals);
+
+animals.shift(); //removes bear at beginning of array
+console.log(animals);
+
+animals.unshift("panther");
+console.log(animals);
+
+var concatenatedArray = groceryList.concat(animals); //adds an array to another array
+
+console.log("Arrays combined: " + concatenatedArray);
+
+var furryAnimals = ["Alpaca", "Ring-tailed Lemur", "Yeti"];
+var scalyAnimals = ["Boa Constrictor", "Godzilla"];
+var featheredAnimals = ["Macaw", "Dodo"];
+
+var allAnimals = furryAnimals.concat(scalyAnimals, featheredAnimals); //Adds multiple arrays together
+
+console.log("All animals: " + allAnimals);

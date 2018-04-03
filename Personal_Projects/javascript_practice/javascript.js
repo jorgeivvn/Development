@@ -260,3 +260,14 @@ console.log(stringStatement);
 var stringStatementJoinMethod = [numberArray[0], "is bigger than", numberArray[1], "is bigger than", numberArray[2]];
 
 console.log(stringStatementJoinMethod.join(" ")); //same as above but this puts everything into another array then uses the join method to create the string statement
+
+[3, 2, 1].join(" is bigger than "); // this is the author's solution
+
+var myDog = {
+  "name": "buddy",
+  "age": 10,
+  "breed": "miniature schnauzer",
+  "color": "salt and pepper"
+}
+
+console.log(myDog);

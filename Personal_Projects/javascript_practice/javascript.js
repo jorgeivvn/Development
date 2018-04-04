@@ -34,7 +34,7 @@ console.log(secondsInAYear);
 var balloons = 100;
 balloons *= 2;
 
-console.log("Balloons = " + balloons);
+console.log("balloons = " + balloons);
 
 var myName = "Jorge";
 console.log(myName.length);
@@ -264,10 +264,13 @@ console.log(stringStatementJoinMethod.join(" ")); //same as above but this puts 
 [3, 2, 1].join(" is bigger than "); // this is the author's solution
 
 var myDog = {
-  "name": "buddy",
-  "age": 10,
-  "breed": "miniature schnauzer",
-  "color": "salt and pepper"
+  name: "buddy",
+  age: 10,
+  breed: "miniature schnauzer",
+  color: "salt and pepper"
 }
 
 console.log(myDog);
+console.log(myDog["name"]);
+console.log(myDog.name);
+console.log(Object.keys(myDog));

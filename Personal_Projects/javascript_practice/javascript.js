@@ -263,14 +263,40 @@ console.log(stringStatementJoinMethod.join(" ")); //same as above but this puts 
 
 [3, 2, 1].join(" is bigger than "); // this is the author's solution
 
+//OBJECTS
+
 var myDog = {
   name: "buddy",
   age: 10,
   breed: "miniature schnauzer",
   color: "salt and pepper"
-}
+};
 
 console.log(myDog);
 console.log(myDog["name"]);
 console.log(myDog.name);
 console.log(Object.keys(myDog));
+
+var myCar = {};
+myCar["color"] = "windveil blue"; //way to add value to the objects
+myCar["engine"] = "4.0L V6";
+myCar["horsepower"] = 210;
+myCar["isFast"] = true;
+
+console.log(myCar);
+
+var myDreamCar = {};
+myDreamCar.make = "BMW";
+myDreamCar.model = "M3";
+myDreamCar.horsepower = 444;
+myDreamCar.isFasterThanMyCar = true;
+
+console.log(myDreamCar);
+console.log(myDreamCar.model);
+
+
+var dinosaurs [
+  { name: "Tyrannosaurus Rex", period: "Late Cretaceous"},
+  { name: "Stegosaurus", period: "Late Jurassic" },
+  { name: "Plateosaurus", period: "Triassic" }
+];

@@ -295,8 +295,31 @@ console.log(myDreamCar);
 console.log(myDreamCar.model);
 
 
-var dinosaurs [
+var dinosaurs = [
   { name: "Tyrannosaurus Rex", period: "Late Cretaceous"},
   { name: "Stegosaurus", period: "Late Jurassic" },
   { name: "Plateosaurus", period: "Triassic" }
 ];
+
+console.log(dinosaurs[0]);
+console.log(dinosaurs[1]["period"]);
+console.log(dinosaurs[1].period);
+//Dot notation can only be used with objects, not arrays.
+
+var ozzy = {
+  name: "Ozzy",
+  age: 28,
+  favoriteSports: ["soccer", "basketball"];
+}
+
+var noel {
+  name: "Noel",
+  age: 31,
+  favoriteSports: ["football", "basketball", "hockey", "baseball"]
+}
+
+var ryan {
+  name: "Ryan",
+  age: 30,
+  favoriteSports: ["football", "soccer", "basketball", "mixed martial arts"]
+}

@@ -368,3 +368,35 @@ console.log(movies["Terminator 2"].releaseDate);
 //or
 var terminator2 = movies["Terminator 2"];
 console.log(terminator2.actors);
+
+var predator = {
+  releaseDate: 1987,
+  duration: 147,
+  actors: ["Arnold Schwarzenegger", "Carl Weathers", "Jesse Ventura"],
+  format: "Blu Ray"
+};
+
+movies["Predator"] = predator;
+console.log(movies);
+console.log(Object.keys(movies));
+
+var scores = {
+  noel: 0,
+  ryan: 0,
+  erik: 0,
+  jorge: 0
+};
+
+console.log(scores);
+scores.noel += 1
+console.log(scores);
+scores.jorge += 3
+console.log(scores);
+
+var myCrazyObject = {
+  "name": "A ridic object",
+  "array": [7, 9, { purpose: "confusion", number: 123 }, 3.3],
+  "random animal": "Panther"
+};
+
+console.log(myCrazyObject.array[2].number);

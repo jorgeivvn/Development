@@ -309,17 +309,62 @@ console.log(dinosaurs[1].period);
 var ozzy = {
   name: "Ozzy",
   age: 28,
-  favoriteSports: ["soccer", "basketball"];
-}
+  favoriteSports: ["soccer", "basketball"]
+};
 
-var noel {
+var noel = {
   name: "Noel",
   age: 31,
   favoriteSports: ["football", "basketball", "hockey", "baseball"]
-}
+};
 
-var ryan {
+var ryan = {
   name: "Ryan",
   age: 30,
   favoriteSports: ["football", "soccer", "basketball", "mixed martial arts"]
-}
+};
+
+var myFriends = [ozzy, noel, ryan];
+console.log(myFriends[2]);
+console.log(myFriends[2].name);
+console.log(myFriends[2].favoriteSports[1]);
+
+var owedMoney = {};
+owedMoney.leyva = 50;
+owedMoney.lucas = 300;
+owedMoney.abner = 50;
+
+console.log(owedMoney);
+
+owedMoney.leyva -= 45;
+
+console.log(owedMoney.leyva);
+
+//Objects to store information about movies, where every key is a movie title, and every value is aother object containing information about the movie.
+var movies = {
+  "Finding Nemo": {
+    releaseDate: 2003,
+    duration: 100,
+    actors: ["Albert Brooks", "Ellen DeGenres", "Alexander Gould"],
+    format: "DVD"
+  },
+  "Star Wars Episode VI": {
+    releaseDate: 1983,
+    duration: 134,
+    actors: ["Mark Hamill", "Harrison Ford", "Carrie Fisher"],
+    format: "DVD"
+  },
+  "Terminator 2": {
+    releaseDate: 1991,
+    duration: 156,
+    actors: ["Arnold Schwarzenegger", "Linda Hamilton", "Edward Furlong"],
+    format: "DVD"
+  }
+};
+
+console.log(movies);
+
+console.log(movies["Terminator 2"].releaseDate);
+//or
+var terminator2 = movies["Terminator 2"];
+console.log(terminator2.actors);

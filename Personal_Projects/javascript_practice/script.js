@@ -20,12 +20,38 @@ if (age >= 25) {
 //chaining if else statements
 var whataburger = false;
 var chickFilA = false;
+var mcdonalds = false;
 var inAndOut = true;
 
 if (whataburger) {
   console.log("I'll have the chicken strips.")
 } else if (chickFilA) {
   console.log("I'll have the nuggets.")
-} else if (inAndOut) {
+} else if (mcdonalds) {
+  console.log("I'll have a big mac!")
+} else if (inAndOut){
   console.log("I'll have a double double animal style!")
+} else {
+  console.log("I DON'T WANT ANYTHING!")
+};
+
+
+var myName = "JOrgE";
+
+if (myName.toLowerCase() === "jorge".toLowerCase()) {
+  console.log("Hello, " + myName)
+} else {
+  console.log("Hello, stranger!")
+};
+
+var otherName = "Diva";
+
+if (otherName.toLowerCase() === "jorge".toLowerCase()) {
+  console.log("Hello " + otherName)
+} else if (otherName.toLowerCase() === "Michael".toLowerCase()) {
+  console.log("Hello " + otherName)
+} else if (otherName.toLowerCase() === "Diva".toLowerCase()) {
+  console.log("Hello mom!")
+} else {
+  console.log("Hello stranger!")
 };

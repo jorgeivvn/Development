@@ -263,14 +263,140 @@ console.log(stringStatementJoinMethod.join(" ")); //same as above but this puts 
 
 [3, 2, 1].join(" is bigger than "); // this is the author's solution
 
+//OBJECTS
+
 var myDog = {
   name: "buddy",
   age: 10,
   breed: "miniature schnauzer",
   color: "salt and pepper"
-}
+};
 
 console.log(myDog);
 console.log(myDog["name"]);
 console.log(myDog.name);
 console.log(Object.keys(myDog));
+
+var myCar = {};
+myCar["color"] = "windveil blue"; //way to add value to the objects
+myCar["engine"] = "4.0L V6";
+myCar["horsepower"] = 210;
+myCar["isFast"] = true;
+
+console.log(myCar);
+
+var myDreamCar = {};
+myDreamCar.make = "BMW";
+myDreamCar.model = "M3";
+myDreamCar.horsepower = 444;
+myDreamCar.isFasterThanMyCar = true;
+
+console.log(myDreamCar);
+console.log(myDreamCar.model);
+
+
+var dinosaurs = [
+  { name: "Tyrannosaurus Rex", period: "Late Cretaceous"},
+  { name: "Stegosaurus", period: "Late Jurassic" },
+  { name: "Plateosaurus", period: "Triassic" }
+];
+
+console.log(dinosaurs[0]);
+console.log(dinosaurs[1]["period"]);
+console.log(dinosaurs[1].period);
+//Dot notation can only be used with objects, not arrays.
+
+var ozzy = {
+  name: "Ozzy",
+  age: 28,
+  favoriteSports: ["soccer", "basketball"]
+};
+
+var noel = {
+  name: "Noel",
+  age: 31,
+  favoriteSports: ["football", "basketball", "hockey", "baseball"]
+};
+
+var ryan = {
+  name: "Ryan",
+  age: 30,
+  favoriteSports: ["football", "soccer", "basketball", "mixed martial arts"]
+};
+
+var myFriends = [ozzy, noel, ryan];
+console.log(myFriends[2]);
+console.log(myFriends[2].name);
+console.log(myFriends[2].favoriteSports[1]);
+
+var owedMoney = {};
+owedMoney.leyva = 50;
+owedMoney.lucas = 300;
+owedMoney.abner = 50;
+
+console.log(owedMoney);
+
+owedMoney.leyva -= 45;
+
+console.log(owedMoney.leyva);
+
+//Objects to store information about movies, where every key is a movie title, and every value is aother object containing information about the movie.
+var movies = {
+  "Finding Nemo": {
+    releaseDate: 2003,
+    duration: 100,
+    actors: ["Albert Brooks", "Ellen DeGenres", "Alexander Gould"],
+    format: "DVD"
+  },
+  "Star Wars Episode VI": {
+    releaseDate: 1983,
+    duration: 134,
+    actors: ["Mark Hamill", "Harrison Ford", "Carrie Fisher"],
+    format: "DVD"
+  },
+  "Terminator 2": {
+    releaseDate: 1991,
+    duration: 156,
+    actors: ["Arnold Schwarzenegger", "Linda Hamilton", "Edward Furlong"],
+    format: "DVD"
+  }
+};
+
+console.log(movies);
+
+console.log(movies["Terminator 2"].releaseDate);
+//or
+var terminator2 = movies["Terminator 2"];
+console.log(terminator2.actors);
+
+var predator = {
+  releaseDate: 1987,
+  duration: 147,
+  actors: ["Arnold Schwarzenegger", "Carl Weathers", "Jesse Ventura"],
+  format: "Blu Ray"
+};
+
+movies["Predator"] = predator;
+console.log(movies);
+console.log(Object.keys(movies));
+
+var scores = {
+  noel: 0,
+  ryan: 0,
+  erik: 0,
+  jorge: 0
+};
+
+console.log(scores);
+scores.noel += 1
+console.log(scores);
+scores.jorge += 3
+console.log(scores);
+
+var myCrazyObject = {
+  "name": "A ridic object",
+  "array": [7, 9, { purpose: "confusion", number: 123 }, 3.3],
+  "random animal": "Panther"
+};
+
+console.log(myCrazyObject.array[2].number);

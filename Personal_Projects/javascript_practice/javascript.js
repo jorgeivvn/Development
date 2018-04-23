@@ -244,7 +244,7 @@ var animalBodyPart = ["Nose", "Butt", "Stinky Mouth"];
 
 var randomBodyPart = bodyParts[Math.floor(Math.random() * bodyParts.length)];
 var randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
-var randomAnimal = animal[Math.floor(Math.random() * animalBodyPart.length)];
+var randomAnimal = animal[Math.floor(Math.random() * animal.length)];
 var randomAnimalBodyPart = animalBodyPart[Math.floor(Math.random() * animalBodyPart.length)];
 
 console.log("Your " + randomBodyPart + " is more " + randomAdjective + " than a " + randomAnimal + "'s " + randomAnimalBodyPart);

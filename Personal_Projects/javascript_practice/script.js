@@ -58,8 +58,14 @@ if (otherName.toLowerCase() === "jorge".toLowerCase()) {
 
 //Counting sheep with a While Loop
 var sheepCounted = 0;
-while (sheepCounted < 10) {
+while (sheepCounted <= 10) {
   console.log("I have counted " + sheepCounted + " sheep!");
     sheepCounted++;
 }
 console.log("Zzzzzzzzzz");
+
+//Counting sheep with a For Loop
+for (var sheepCounted = 0; sheepCounted <= 10; sheepCounted++) {
+  console.log("I have counted " + sheepCounted + " sheep!");
+}
+console.log("Zzzzzzzz");

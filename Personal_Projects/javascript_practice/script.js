@@ -69,3 +69,8 @@ for (var sheepCounted = 0; sheepCounted <= 10; sheepCounted++) {
   console.log("I have counted " + sheepCounted + " sheep!");
 }
 console.log("Zzzzzzzz");
+
+var timesToSayHello = 3;
+for(var i = 0; i < timesToSayHello; i++) {
+  console.log("Hello!");
+};

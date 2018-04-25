@@ -74,3 +74,8 @@ var timesToSayHello = 3;
 for(var i = 0; i < timesToSayHello; i++) {
   console.log("Hello!");
 };
+
+var animals = ["lion", "flamingo", "tiger", "panther"];
+for (var i = 0; i <= animals.length; i++) {
+  console.log("This zoo holds a " + animals[i] + "!");
+};

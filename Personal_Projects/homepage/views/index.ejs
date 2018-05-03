@@ -13,6 +13,12 @@
         <input type="text" name="newtask" placeholder="Add all tasks for today...">
         <button>Add</button>
       <h2>Added Tasks For Today</h2>
+        <% for(var i=0; i < tasks.length; i++){ %>
+          <ol><input type="checkbox" name="check" value="<%= tasks[i] %>" /> <%= tasks[i] %> </ol>
+
+          <% } %>
+
+
       <button formaction="/deletetask" type="submit"> Delete </button>
     </form>
     </div>

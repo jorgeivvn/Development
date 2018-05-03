@@ -4,9 +4,19 @@
     <meta charset="utf-8">
     <title>Jorge's Homepage</title>
     <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
-    <link href='/styles.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
   </head>
   <body>
+    <h1>Welcome Jorge!</h1>
+    <div class="container">
+      <h2>Weather</h2>
+
+        <form action="/getweather" method="post">
+          <input name="city" type="text" class="ghost-input" placeholder="Current Location" required>
+          <input type="submit" class="ghost-button" value="Get Weather">
+        </form>
+
+    </div>
     <div class="container">
       <h2>What are your tasks for today, Jorge?</h2>
       <form action ="/addtask" method="POST">
@@ -15,12 +25,13 @@
       <h2>Added Tasks For Today</h2>
         <% for(var i=0; i < tasks.length; i++){ %>
           <ol><input type="checkbox" name="check" value="<%= tasks[i] %>" /> <%= tasks[i] %> </ol>
-
           <% } %>
-
-
-      <button formaction="/deletetask" type="submit"> Delete </button>
+      <button formaction="/deletetask" type="submit"> Completed </button>
     </form>
+    <h2>Finished Tasks</h2>
+    <% for(var i = 0; i < complete.length; i++){ %>
+      <ol><input type="checkbox" checked><%= complete[i] %> </ol>
+    <% } %>
     </div>
   </body>
 </html>

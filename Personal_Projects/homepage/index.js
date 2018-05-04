@@ -1,18 +1,21 @@
 var express = require('express');
 var app = express();
+var request = require('request');
 var bodyParser = require('body-parser');
+var argv = require('yargs').argv;
 var http = require('http');
-var url = 'http://api.openweathermap.org/data/2.5/weather?id=4058076&APPID=8e21efc86f5a2d4198cf1d4e4cbaead0';
+const apiKey = '94354a8546f85aa028ff02a560eef628';
+var city = argv.c || 'miami';
 var PORT = Number(process.env.PORT || 5000);
-
+let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
 
 //Middleware
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 
-var tasks = ['go to gym', 'prepare for Oracle interview'];
-var complete = ['take dog for a walk'];
+var tasks = [];
+var complete = [];
 
 app.post('/addtask', function (req, res) {
   var newTask = req.body.newtask;
@@ -35,12 +38,27 @@ app.post('/deletetask', function(req, res) {
 });
 
 app.post('/getweather', function (req, res) {
-  console.log(req.body.city);
-  res.redirect('/');
+  let city = req.body.city;
+  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+  request(url, function (err, response, body) {
+    if(err){
+      res.render('index', {weather: null, error: 'Error!'});
+    } else {
+      let weather = JSON.parse(body)
+      if(weather.main == undefined) {
+        res.render('index', {weather: null, error: 'Error!'});
+      } else {
+        let weatherNotification = `It's ${weather.main.temp} degrees in ${weather.name}!`;
+        console.log(weatherNotification);
+        res.render('index', {weather: weatherNotification, error: null, tasks: tasks, complete:complete});
+      }
+    }
+  });
 })
 
+
 app.get('/', function (req, res) {
-  res.render('index', {tasks: tasks, complete: complete});
+  res.render('index', {tasks: tasks, complete: complete, weather: null, error: null});
 });
 
 app.listen(PORT, function () {

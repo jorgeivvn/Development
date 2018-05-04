@@ -1,4 +1,37 @@
-h2 {
+h1.round {
   font-family: 'Asap', sans-serif;
-  color: red;
+  color: #457BF5;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #457BF5;
+  border-radius: 5px;
+  background-color: white;
+}
+
+input[type=text], select {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+
+    background-color: #457BF5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+div {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
 }

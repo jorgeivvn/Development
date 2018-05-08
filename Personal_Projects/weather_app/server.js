@@ -4,6 +4,7 @@ var PORT = Number(process.env.PORT || 8081);
 
 var server = http.createServer(function(request,response){
   //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins 
   var request = require('request');
   request(url, function(err,res, body){
     var data = JSON.parse(body);

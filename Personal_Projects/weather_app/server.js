@@ -1,7 +1,31 @@
 var http = require('http');
 var url = 'http://api.openweathermap.org/data/2.5/weather?id=4058076&APPID=8e21efc86f5a2d4198cf1d4e4cbaead0';
+var PORT = Number(process.env.PORT || 8081);
 
 var server = http.createServer(function(request,response){
+  //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins
+  //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins //Body is below displaying the temperature of Dallas
+  //Temp has to be converted because the openweathermap gives temperature in kelvins 
   var request = require('request');
   request(url, function(err,res, body){
     var data = JSON.parse(body);
@@ -15,6 +39,6 @@ var server = http.createServer(function(request,response){
     response.write("</div></body></html>");
     response.end();
   })
-}).listen(8081, () => {
-  console.log("Listening!");
-});
+})
+
+server.listen(PORT);

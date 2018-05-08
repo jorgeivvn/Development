@@ -7,6 +7,6 @@ Unnamed Map Project lets you and your network annotate your world. Login to view
 When a user signs in, they will have a map, and a sidebar with groups. The user will be able to add a pin to the map of a place they have visited. The user will then be able to add comments/thoughts on that place they pinned on the map. Users will be able to edit, add, and delete to their comments/thoughts. User will also be able to create different groups with different members/friends/users.
 
 ## Wireframe
-![img](./public/images/UntitledMapProject.jpg)
+![img](./images/UntitledMapProject.jpg)
 
-![img](./public/images/UntitledMapProjectModals.jpg)
+![img](./images/UntitledMapProjectModals.jpg)

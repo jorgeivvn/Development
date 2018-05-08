@@ -4,5 +4,5 @@
   },
   "command": "node server.js",
   "release": {},
-  "notes": "Hello Weather application"
+  "notes": "Hello World application"
 }

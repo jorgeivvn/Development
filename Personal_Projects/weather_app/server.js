@@ -3,6 +3,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=4058076&APPID=8e21e
 var PORT = Number(process.env.PORT || 8081);
 
 var server = http.createServer(function(request,response){
+  //Body is below displaying the temperature of Dallas
   var request = require('request');
   request(url, function(err,res, body){
     var data = JSON.parse(body);

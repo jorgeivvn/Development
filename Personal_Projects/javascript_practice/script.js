@@ -79,3 +79,10 @@ var animals = ["lion", "flamingo", "tiger", "panther"];
 for (var i = 0; i <= animals.length; i++) {
   console.log("This zoo holds a " + animals[i] + "!");
 };
+
+var name = "Jorge";
+for (var i = 0; i < name.length; i++) {
+  console.log("My name contains the letter " + name[i] + ".");
+}
+
+//Using for loop for other than beginning at 0, and incrementing it by 1

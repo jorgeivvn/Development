@@ -86,3 +86,21 @@ for (var i = 0; i < name.length; i++) {
 }
 
 //Using for loop for other than beginning at 0, and incrementing it by 1
+//A way to print all the powers of 2 below the number 10,000
+for (var x = 2; x < 10000; x = x * 2) {
+  console.log(x);
+}
+
+//Above, we set x to 2 and increment the value of x using x = x * 2;, which will double the value of x each time the loop runs.
+
+//write a for loop to print the powers of 3 under 10,000
+for (var x = 3; x < 10000; x = x * 3) {
+  console.log(x);
+}
+
+//same but with a while loop
+var x = 3
+while (x < 10000) {
+  console.log("Hello " + x);
+  x = x * 3;
+}

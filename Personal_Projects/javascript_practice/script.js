@@ -104,3 +104,8 @@ while (x < 10000) {
   console.log("Hello " + x);
   x = x * 3;
 }
+
+var animals = ["Cat", "Dog", "Dragon", "Panther", "Lion"]
+for (var i = 0; i < animals.length; i++) {
+  console.log("Awesome " + animals[i] + "!");
+}

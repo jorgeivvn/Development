@@ -105,7 +105,16 @@ while (x < 10000) {
   x = x * 3;
 }
 
+//following is my approach to coding challenge ch 6.
+// var animals = ["Cat", "Dog", "Dragon", "Panther", "Lion"]
+// for (var i = 0; i < animals.length; i++) {
+//   console.log("Awesome " + animals[i] + "!");
+//   console.log(animals);
+// }
+
+//Following is solution to coding challenge ch 6, it makes a new array with awesome added to each animal
 var animals = ["Cat", "Dog", "Dragon", "Panther", "Lion"]
 for (var i = 0; i < animals.length; i++) {
-  console.log("Awesome " + animals[i] + "!");
+  animals[i] = "Awesome " + animals[i] + "!";
+  console.log(animals);
 }

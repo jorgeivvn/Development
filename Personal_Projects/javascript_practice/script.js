@@ -118,3 +118,7 @@ for (var i = 0; i < animals.length; i++) {
   animals[i] = "Awesome " + animals[i] + "!";
   console.log(animals);
 }
+
+var alphabet = "abcdefghijklmnopqrstuvwxyz";
+var randomLetter = Math.floor(Math.random() * alphabet.length);
+console.log(randomLetter);

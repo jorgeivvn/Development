@@ -120,5 +120,9 @@ for (var i = 0; i < animals.length; i++) {
 }
 
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
-var randomLetter = Math.floor(Math.random() * alphabet.length);
-console.log(randomLetter);
+var randomString = "";
+var stringLength =7;
+for (var i = 0; i < stringLength; i++) {
+  randomString += alphabet[Math.floor(Math.random() * alphabet.length)];
+}
+console.log(randomString);

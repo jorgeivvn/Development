@@ -119,6 +119,7 @@ for (var i = 0; i < animals.length; i++) {
   console.log(animals);
 }
 
+//Challenge 2 ch 6
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
 var randomString = "";
 var stringLength =7;
@@ -126,3 +127,7 @@ for (var i = 0; i < stringLength; i++) {
   randomString += alphabet[Math.floor(Math.random() * alphabet.length)];
 }
 console.log(randomString);
+
+//Challenge 3 ch 6
+var input = " michael jordan is the goat";
+var output = ""; 

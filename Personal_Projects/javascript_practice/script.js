@@ -129,5 +129,13 @@ for (var i = 0; i < stringLength; i++) {
 console.log(randomString);
 
 //Challenge 3 ch 6
-var input = " michael jordan is the goat";
-var output = ""; 
+var input = "michael jordan is the goat";
+var output = "";
+for (var i = 0; i < input.length; i++) {
+  if(input[i] === "i") {
+    output += 1;
+  } else if (input[i] === "e") {
+    output += 3;
+  }
+}
+console.log(output)

@@ -15,7 +15,24 @@ var words = [
   "oneal",
   "chamberlain",
   "paul",
-  "curry"
+  "curry",
+  "miller",
+  "pippen",
+  "ewing",
+  "starks",
+  "oakley",
+  "stoudamire",
+  "howard",
+  "johnson",
+  "elliot",
+  "payton",
+  "kidd",
+  "nash",
+  "kerr",
+  "thompson",
+  "durant",
+  "westbrook",
+  "rose"
 ]
 
 var word = words[Math.floor(Math.random() * words.length)];

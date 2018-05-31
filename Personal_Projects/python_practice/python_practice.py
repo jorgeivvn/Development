@@ -29,3 +29,17 @@ robocop = '''boom
 boom baby
 shakalaka'''
 print(robocop)
+
+silly_string = '''He said, "Aren't can't shouldn't wouldn't."'''
+print(silly_string)
+
+mypoints = 23
+mypointsin2ndgame = 10
+message = "I scored %s points"
+print(message % mypoints)
+print(message % mypointsin2ndgame)
+
+mypoints = 27
+myrebounds = 13
+message = "I scored %s points and %s rebounds"
+print(message % (mypoints, myrebounds))

@@ -92,3 +92,21 @@ print(favorite_sports)
 favorite_sports['Jorge'] = 'Basketball'
 print(favorite_sports)
 # you can't join maps with plus + operators
+
+# review
+games = ['Basketball', 'Soccer', 'Halo']
+foods = ['Pizza', 'Pasta', 'Tacos', 'Burgers']
+favorites = (games + foods)
+print(favorites)
+
+buildings = 3
+ninjas = 25
+tunnels = 2
+samurai = 40
+battle = ninjas * buildings + tunnels * samurai
+print(battle)
+
+first_name = 'Jorge'
+last_name = 'Rodriguez'
+message = 'Hi there, %s %s!'
+print(message % (first_name, last_name))

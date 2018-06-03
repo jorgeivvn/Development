@@ -43,3 +43,14 @@ mypoints = 27
 myrebounds = 13
 message = "I scored %s points and %s rebounds"
 print(message % (mypoints, myrebounds))
+
+myfood = "Pizza"
+flavor_of_dessert = "Vanilla"
+mydessert = "Creme Brulee"
+message = "I had %s for dinner and %s %s for dessert!"
+print(message % (myfood, flavor_of_dessert, mydessert))
+
+
+wizard_list = ['spider legs', 'toe of frog', 'eye of a dragon', 'bat wing', 'snake skin']
+print(wizard_list)
+print(wizard_list[0])

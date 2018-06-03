@@ -54,3 +54,19 @@ print(message % (myfood, flavor_of_dessert, mydessert))
 wizard_list = ['spider legs', 'toe of frog', 'eye of a dragon', 'bat wing', 'snake skin']
 print(wizard_list)
 print(wizard_list[0])
+wizard_list[1] = 'heart of a lion'
+print(wizard_list)
+print(wizard_list[2:5])
+# This prints from index 2 all the way to 4 because 5 is not an index but you include it to include the 4th index
+
+numbers = [1, 2 , 3, 4, 5]
+strings = ['Penny', 'Mitch', 'Iverson', 'Webber', 'Howard']
+mylist = [numbers, strings]
+print(mylist)
+numbers.append(6)
+strings.append('Lebron')
+print(mylist)
+# Append adds to the end of a list
+del numbers[1]
+del strings[1]
+print(mylist)

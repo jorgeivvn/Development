@@ -75,3 +75,20 @@ print(numbers + strings)
 # above adds both numbers and strings into one list
 numbersandnames = (numbers + strings)
 print(numbersandnames)
+
+mynames = ['Jorge', 'Ivan']
+print(mynames * 3)
+
+# tuples is the same as a list but can never be changed
+favoritenumbers = (7, 15, 23)
+print(favoritenumbers[0])
+
+# maps have keys and corresponding values
+favorite_sports = {'Jorge' : 'Basketball and Soccer', 'Hector' : 'Baseball', 'Ryan' : 'Football', 'Adrian' : 'College Basketball'}
+print(favorite_sports['Jorge'])
+del (favorite_sports['Adrian'])
+print(favorite_sports)
+#to replace a value in a maps
+favorite_sports['Jorge'] = 'Basketball'
+print(favorite_sports)
+# you can't join maps with plus + operators

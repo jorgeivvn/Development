@@ -70,3 +70,8 @@ print(mylist)
 del numbers[1]
 del strings[1]
 print(mylist)
+# del deletes from list
+print(numbers + strings)
+# above adds both numbers and strings into one list
+numbersandnames = (numbers + strings)
+print(numbersandnames)

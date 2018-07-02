@@ -400,3 +400,47 @@ var myCrazyObject = {
 };
 
 console.log(myCrazyObject.array[2].number);
+
+//assignment1
+var n = function (number) {
+  while(number !=1) {
+    if (number % 2 == 0) {
+      number = number / 2;
+      console.log(number);
+    } else {
+      number = number * 3 + 1;
+      console.log(number)
+    }
+  }
+}
+
+n(14);
+
+//assignment2
+array1 = [1,3,4,4,5];
+array2 = [];
+for(i = 0; i <= array1.length; i++) {
+for(j = i+1; j <= array1.length; j++) {
+  if(array1[i] === array1[j]) {
+    array2 = array1.slice();
+    // console.log(array2);
+    j = array2[j];
+    // console.log(array2.indexOf(j));
+    var duplicateIndex = array2.indexOf(j);
+    array2.splice(duplicateIndex, 1);
+    console.log(array1);
+    console.log(array2);
+    }
+  }
+}
+
+//assignment3
+var subjects = 5;
+var marks = [60, 70, 80, 90, 45];
+var total = 0;
+for(i=0; i < marks.length; i++) {
+  total += marks[i];
+  var percentage = total / subjects;
+}
+
+console.log(percentage + "%");
